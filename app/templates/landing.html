@@ -1,0 +1,49 @@
+<!-- app/templates/landing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteMaster - Your Personal Note Taking App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('landing.landing') }}">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="{{ url_for('auth_bp.login') }}">Login</a></li>
+                <li><a href="{{ url_for('auth_bp.register') }}">Register</a></li>
+                <li><a href="{{ url_for('auth_bp.login') }}" class="button">Go to App</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cover">
+        <div class="cover-text">
+            <h1>NoteMaster</h1>
+            <p>Your Personal Note Taking App</p>
+            <a href="{{ url_for('auth_bp.register') }}" class="button">Get Started</a>
+        </div>
+    </div>
+    <main>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Secure user authentication</li>
+                <li>Create, read, update, and delete notes</li>
+                <li>Search and organize notes</li>
+            </ul>
+        </section>
+        <section id="about">
+            <h2>About NoteMaster</h2>
+            <p>NoteMaster is a simple, secure, and efficient note-taking application. Keep your notes organized and accessible from anywhere.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NoteMaster. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
