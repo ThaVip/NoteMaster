@@ -4,50 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteMaster - Your Personal Note Taking App</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="{{ url_for('landing.landing') }}">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="{{ url_for('auth.login') }}">Login</a></li>
-                <li><a href="{{ url_for('auth.register') }}">Register</a></li>
-                <li><a href="{{ url_for('auth.login') }}" class="button">Go to App</a></li>
+                <li><a href="YOUR_FLASK_APP_URL/login">Login</a></li>
+                <li><a href="YOUR_FLASK_APP_URL/register">Register</a></li>
+                <li><a href="YOUR_FLASK_APP_URL" class="button">Go to App</a></li>
             </ul>
         </nav>
     </header>
-    <div class="cover">
+    <div class="cover" id="home">
         <div class="cover-text">
             <h1>NoteMaster</h1>
             <p>Your Personal Note Taking App</p>
-            <a href="{{ url_for('auth.register') }}" class="button">Get Started</a>
+            <a href="YOUR_FLASK_APP_URL/register" class="button">Get Started</a>
         </div>
     </div>
     <main>
         <section id="features">
             <h2>Features</h2>
             <div class="feature">
-                <img src="{{ url_for('static', filename='images/secure-auth.png') }}" alt="Secure Authentication">
+                <img src="static/images/secure-auth.png" alt="Secure Authentication">
                 <h3>Secure Authentication</h3>
                 <p>Keep your notes secure with our robust authentication system.</p>
             </div>
             <div class="feature">
-                <img src="{{ url_for('static', filename='images/crud-notes.png') }}" alt="CRUD Notes">
+                <img src="static/images/crud-notes.png" alt="CRUD Notes">
                 <h3>Create, Read, Update, Delete Notes</h3>
                 <p>Manage your notes effortlessly with our CRUD functionality.</p>
             </div>
             <div class="feature">
-                <img src="{{ url_for('static', filename='images/search-organize.png') }}" alt="Search and Organize">
+                <img src="static/images/search-organize.png" alt="Search and Organize">
                 <h3>Search and Organize Notes</h3>
                 <p>Easily search and organize your notes to find what you need quickly.</p>
             </div>
         </section>
         <section id="about">
             <h2>About NoteMaster</h2>
-            <p>NoteMaster is a simple, secure, and efficient note-taking application. Keep your notes organized and accessible from anywhere.</p>
+            <p>
+                The inspiration for NoteMaster came from my own need to keep my thoughts, ideas, and tasks organized. I found myself constantly switching between different note-taking applications and losing track of where I stored my notes. I wanted a simple, secure, and efficient solution that would help me stay organized in one place.
+            </p>
+            <p>
+                The development of NoteMaster started as a personal project, and over time it evolved into a more robust application. This project is part of my portfolio for Holberton School, where I am learning full-stack development.
+            </p>
+            <p>
+                You can connect with me and follow the project's development on my social profiles:
+                <br>
+                <a href="https://www.linkedin.com/in/your-linkedin">LinkedIn</a> |
+                <a href="https://github.com/ThaVip">GitHub</a> |
+                <a href="https://twitter.com/">Twitter</a>
+            </p>
+            <p>
+                The source code for this project is available on GitHub: 
+                <a href="https://github.com/thavip/NoteMaster">GitHub Repository</a>
+            </p>
         </section>
     </main>
     <footer>
