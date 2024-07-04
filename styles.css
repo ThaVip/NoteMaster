@@ -1,28 +1,39 @@
-/* styles.css */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+h1, h2, h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #333;
+}
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.6;
+}
+
+/* Header Styles */
 header {
     background: #333;
     color: #fff;
-    padding: 1em 0;
-    text-align: center;
+    padding: 10px 0;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 header nav ul li {
-    margin: 0 1em;
+    margin: 0 20px;
 }
 
 header nav ul li a {
@@ -31,74 +42,59 @@ header nav ul li a {
     font-weight: bold;
 }
 
-header nav ul li a.button {
-    background: #007bff;
-    padding: 0.5em 1em;
-    border-radius: 4px;
-}
-
+/* Cover Styles */
 .cover {
-    background: url('/images/cover.jpg')no-repeat center center/cover;
-    height: 50vh;
+    background: url('../images/cover-image.jpg') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     color: #fff;
     text-align: center;
 }
 
-.cover-text {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2em;
-    border-radius: 4px;
-}
-
 .cover-text h1 {
-    margin: 0;
     font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .cover-text p {
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .cover-text .button {
-    background: #007bff;
-    padding: 0.5em 1em;
-    border-radius: 4px;
-    text-decoration: none;
+    background: #007BFF;
     color: #fff;
-    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
+/* Main Content Styles */
 main {
-    padding: 2em;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px;
 }
 
-#features, #about {
-    margin-bottom: 2em;
+section {
+    margin: 40px 0;
 }
 
 .feature {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1em;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .feature img {
-    max-width: 200px;
-    margin-right: 1em;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.feature h3 {
-    margin: 0;
-}
-
+/* Footer Styles */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 10px 0;
 }
