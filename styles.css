@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a.button {
+    background: #007bff;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.cover {
+    background: url('{{ url_for('static', filename='images/cover.jpg') }}') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.cover-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    border-radius: 4px;
+}
+
+.cover-text h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.cover-text p {
+    font-size: 1.2em;
+}
+
+.cover-text .button {
+    background: #007bff;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#features, #about {
+    margin-bottom: 2em;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.feature img {
+    max-width: 200px;
+    margin-right: 1em;
+}
+
+.feature h3 {
+    margin: 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
