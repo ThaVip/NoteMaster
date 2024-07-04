@@ -11,11 +11,13 @@ h1, h2, h3 {
     margin: 0 0 10px;
     padding: 0;
     color: #333;
+    font-weight: bold;
 }
 
 p {
     margin: 0 0 20px;
     line-height: 1.6;
+    font-weight: bold;
 }
 
 /* Header Styles */
@@ -44,7 +46,7 @@ header nav ul li a {
 
 /* Cover Styles */
 .cover {
-    background: url('../images/cover-image.jpg') no-repeat center center/cover;
+    background: url('../images/cover.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -56,11 +58,13 @@ header nav ul li a {
 .cover-text h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .cover-text p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .cover-text .button {
@@ -69,6 +73,7 @@ header nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 /* Main Content Styles */
@@ -97,4 +102,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    font-weight: bold;
 }
