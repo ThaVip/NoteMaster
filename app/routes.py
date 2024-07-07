@@ -7,6 +7,20 @@ from flask_bcrypt import generate_password_hash, check_password_hash
 def home():
     return render_template('login.html')
 
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
+        new_user = User(username=username, password=hashed_password)
+        db.session.add(new_user
+        db.session.commit()
+        return redirect(url_for('login'))
+    return render_template('register.html')
+
+
+
 @app.route('/signup', methods=['POST'])
 def signup():
     data = request.get_json()
