@@ -19,14 +19,10 @@ def create_app():
     bcrypt.init_app(app)
     migrate.init_app(app, db)
 
-    from app.routes.auth import auth_bp
-    from app.routes.notes import notes_bp
-    from app.routes.landing import landing_bp  # Import the landing blueprint
+    from .routes.auth import auth_bp
+    from .routes.notes import notes_bp
 
-    app.register_blueprint(auth_bp, url_prefix='/auth')
-    app.register_blueprint(notes_bp, url_prefix='/notes')
-    app.register_blueprint(landing_bp)  # Register the landing blueprint
+    app.register_blueprint(auth_bp)
+    app.register_blueprint(notes_bp)
 
     return app
-
-
