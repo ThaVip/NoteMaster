@@ -3,8 +3,8 @@ from app import app, db, bcrypt
 from app.models import User
 
 @app.route('/')
-def landing_page():
-    return render_template('landing_page.html')
+def login():
+    return render_template('login.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
